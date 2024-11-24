@@ -43,20 +43,28 @@ export const navLinks = [
 
 const products = [
   {
-    title: "Web Developer",
+    title: "Digital Twin Insight",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Global Facility Network",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Intelligent Asset Tracking",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Seamless Platform Integration",
     icon: creator,
+  },
+  {
+    title: "Cross-site Analytics",
+    icon: web,
+  },
+  {
+    title: "Scalable Pilot Solutions",
+    icon: mobile,
   },
 ];
 

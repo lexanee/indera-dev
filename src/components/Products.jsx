@@ -34,46 +34,18 @@ const ProductCard = ({ index, title, icon }) => (
 const Products = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <motion.div
+        variants={textVariant()}
+        className="flex flex-col items-center">
         <p className={`${styles.sectionSubText} text-center`}>
           Unified Digital Twin
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Our Products
         </h2>
-      </motion.div>
-      <motion.div variants={textVariant()} className="mt-5">
-        <p className={`${styles.sectionSubText} normal-case font-bold`}>
+        <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-center">
           Seamless Integration of Digital Ecosystems
         </p>
-        <ul className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] list-disc ml-8">
-          <li>
-            Build and connect specialized digital twins to reveal hidden
-            relationships between assets and systems, enabling comprehensive
-            insights across your infrastructure.
-          </li>
-          <li>
-            Unite global operations through interconnected facility networks,
-            breaking down data silos and enabling real-time collaboration.
-          </li>
-          <li>
-            Leverage intelligent asset tracking with immediate geographical
-            visualization of equipment and resources across your enterprise.
-          </li>
-          <li>
-            Seamlessly integrate with industry-leading platforms and systems,
-            ensuring smooth data flow between different technological
-            ecosystems.
-          </li>
-          <li>
-            Unlock powerful cross-site analytics to identify patterns and
-            opportunities for optimization across your entire operation network.
-          </li>
-          <li>
-            Scale successful pilot implementations efficiently by simulating and
-            deploying proven solutions across multiple locations.
-          </li>
-        </ul>
       </motion.div>
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {products.map((product, index) => (
