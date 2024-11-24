@@ -11,7 +11,7 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Who We Are</h2>
       </motion.div>
-      <motion.div variants={textVariant()} className="mt-5">
+      <motion.div variants={textVariant(0.5)} className="mt-5">
         <p className={`${styles.sectionSubText} normal-case font-bold`}>
           Our Vision
         </p>
@@ -22,7 +22,7 @@ const About = () => {
           utilize their operational data.
         </p>
       </motion.div>
-      <motion.div variants={textVariant()} className="mt-5">
+      <motion.div variants={textVariant(1)} className="mt-5">
         <p className={`${styles.sectionSubText} normal-case font-bold`}>
           Our Mission
         </p>
@@ -32,7 +32,7 @@ const About = () => {
           sustainable practices through innovative digital twin technology.
         </p>
       </motion.div>
-      <motion.div className="mt-5">
+      <motion.div variants={textVariant(1.5)} className="mt-5">
         <p className={`${styles.sectionSubText} normal-case font-bold`}>
           Our Approuch
         </p>
@@ -43,7 +43,7 @@ const About = () => {
           <li>Visualization Excellence</li>
         </ul>
       </motion.div>
-      <motion.div className="mt-5">
+      <motion.div variants={textVariant(2)} className="mt-5">
         <p className={`${styles.sectionSubText} normal-case font-bold`}>
           Our Goals
         </p>
