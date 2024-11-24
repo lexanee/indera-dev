@@ -60,7 +60,7 @@ const Features = () => {
         variants={textVariant()}
         className="flex flex-col items-center">
         <p className={`${styles.sectionSubText} text-center`}>
-          features we offer
+          Features we offer
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Feature List
@@ -70,11 +70,10 @@ const Features = () => {
           accessible through a simple geospatial visual interface.
         </p>
       </motion.div>
-
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {features.map((feature, index) => (
-            <FeatureCard key={`features-${index}`} features={feature} />
+            <FeatureCard key={`feature-${index}`} features={feature} />
           ))}
         </VerticalTimeline>
       </div>
