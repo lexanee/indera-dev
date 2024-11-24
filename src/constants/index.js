@@ -1,5 +1,6 @@
 import {
   backend,
+  ilms,
   carrent,
   creator,
   css,
@@ -114,52 +115,104 @@ const technologies = [
   },
 ];
 
-const experiences = [
+const features = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "2D Plans",
+    company_name: "subtitle placeholder",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    // date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "P&ID Diagram",
+    company_name: "subtitle placeholder",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    // date: "Jan 2021 - Feb 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Maintenance Instructor Videos",
+    company_name: "subtitle placeholder",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    // date: "Jan 2022 - Jan 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "CAD & BIM Models",
+    company_name: "subtitle placeholder",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    // date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "GIS Mapping",
+    company_name: "subtitle placeholder",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    // date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Drone Footage, Photogrammetry & Point Clouds",
+    company_name: "subtitle placeholder",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    // date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Crew Photos",
+    company_name: "subtitle placeholder",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    // date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Work Orders",
+    company_name: "subtitle placeholder",
+    icon: meta,
+    iconBg: "#E6DEDD",
+    // date: "Jan 2023 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -198,68 +251,68 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Immersive Learning System",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developing a app-based platform that integrates Virtual Reality (VR) spaces with a Learning Management System (LMS) to enhance the training and knowledge of ship inspectors from the Australian Maritime Safety Authority and SSI-COE.",
     tags: [
       {
-        name: "react",
+        name: "vr",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "lms",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "miv",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ilms,
+    project_preview: "#",
   },
   {
-    name: "Job IT",
+    name: "Immersive Learning System",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developing a app-based platform that integrates Virtual Reality (VR) spaces with a Learning Management System (LMS) to enhance the training and knowledge of ship inspectors from the Australian Maritime Safety Authority and SSI-COE.",
     tags: [
       {
-        name: "react",
+        name: "vr",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "lms",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "miv",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: ilms,
+    project_preview: "#",
   },
   {
-    name: "Trip Guide",
+    name: "Immersive Learning System",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Developing a app-based platform that integrates Virtual Reality (VR) spaces with a Learning Management System (LMS) to enhance the training and knowledge of ship inspectors from the Australian Maritime Safety Authority and SSI-COE.",
     tags: [
       {
-        name: "nextjs",
+        name: "vr",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "lms",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "miv",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: ilms,
+    project_preview: "#",
   },
 ];
 
-export { products, technologies, experiences, testimonials, projects };
+export { products, technologies, features, testimonials, projects };
