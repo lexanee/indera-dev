@@ -6,15 +6,15 @@ import {
   Experience,
   Hero,
   Navbar,
-  StarsCanvas,
+  Products,
   Tech,
   Works,
 } from "./components";
-import Products from "./components/Products";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
@@ -27,7 +27,6 @@ const App = () => {
         <Works />
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
