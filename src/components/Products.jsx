@@ -1,13 +1,18 @@
 import { motion } from "framer-motion";
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { products } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ProductCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
+  <Tilt
+    tiltMaxAngleX={45}
+    tiltMaxAngleY={45}
+    scale={1}
+    transitionSpeed={450}
+    className="xs:w-[250px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
@@ -37,11 +42,9 @@ const Products = () => {
       <motion.div
         variants={textVariant()}
         className="flex flex-col items-center">
-        <p className={`${styles.sectionSubText} text-center`}>
-          Unified Digital Twin
-        </p>
+        <p className={`${styles.sectionSubText} text-center`}>Our Concept</p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Our Products
+          Unified Digital Twin
         </h2>
         <p className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-center">
           Seamless Integration of Digital Ecosystems
