@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { close, logo, menu } from "../assets";
+import { close, menu } from "../assets";
 import { navLinks } from "../constants";
 import { styles } from "../styles";
 
@@ -40,7 +40,6 @@ const Navbar = () => {
             setActive("");
             window.scrollTo(0, 0);
           }}>
-          {/* <img src={logo} alt='logo' className='w-9 h-9 object-contain' />/ */}
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             <span className="sm:block hidden">INDERA</span>
           </p>
