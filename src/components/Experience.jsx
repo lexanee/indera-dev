@@ -40,7 +40,7 @@ const FeatureCard = ({ features }) => {
         </p>
       </div>
 
-      <ul className="mt-5 list-disc ml-5 space-y-2">
+      {/* <ul className="mt-5 list-disc ml-5 space-y-2">
         {features.points.map((point, index) => (
           <li
             key={`features-point-${index}`}
@@ -48,7 +48,7 @@ const FeatureCard = ({ features }) => {
             {point}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </VerticalTimelineElement>
   );
 };
@@ -59,9 +59,7 @@ const Features = () => {
       <motion.div
         variants={textVariant()}
         className="flex flex-col items-center">
-        <p className={`${styles.sectionSubText} text-center`}>
-          Features we offer
-        </p>
+        <p className={`${styles.sectionSubText} text-center`}>Our Offer</p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
           Feature List
         </h2>
