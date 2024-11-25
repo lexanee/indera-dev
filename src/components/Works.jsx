@@ -1,9 +1,9 @@
 import React from "react";
-import Tilt from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { github } from "../assets";
+import { web } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -19,11 +19,10 @@ const ProjectCard = ({
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
+        tiltMaxAngleX={45}
+        tiltMaxAngleY={45}
+        scale={1}
+        transitionSpeed={450}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full">
         <div className="relative w-full h-[230px]">
           <img
@@ -37,8 +36,8 @@ const ProjectCard = ({
               onClick={() => window.open(project_preview, "_blank")}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
               <img
-                src={github}
-                alt="source code"
+                src={web}
+                alt="preview"
                 className="w-1/2 h-1/2 object-contain"
               />
             </div>
