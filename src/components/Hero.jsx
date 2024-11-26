@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+import { logo } from "../assets";
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 
@@ -15,7 +16,11 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            <span className="text-[#915EFF]">INDERA</span>, here.
+            <img
+              src={logo}
+              alt="logo"
+              className="ml-[-25px] w-96 h-auto object-contain"
+            />
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             In Journey to Pioneering <br className="sm:block hidden" />
