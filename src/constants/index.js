@@ -3,19 +3,11 @@ import {
   ilms,
   creator,
   css,
-  docker,
-  figma,
-  git,
   html,
   javascript,
-  meta,
   mobile,
-  mongodb,
   nodejs,
-  reactjs,
-  redux,
   tailwind,
-  threejs,
   typescript,
   web,
 } from "../assets";
@@ -72,6 +64,10 @@ const technologies = [
     icon: css,
   },
   {
+    name: "Node JS",
+    icon: nodejs,
+  },
+  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -80,48 +76,17 @@ const technologies = [
     icon: typescript,
   },
   {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
 const features = [
   {
     title: "2D Plans",
-    company_name: "subtitle placeholder",
-    icon: meta,
+    company_name:
+      "Visualize and interact with traditional 2D drawings effortlessly.",
+    icon: web,
     iconBg: "#E6DEDD",
     // date: "March 2020 - April 2021",
     // points: [
@@ -133,44 +98,47 @@ const features = [
   },
   {
     title: "P&ID Diagram",
-    company_name: "subtitle placeholder",
-    icon: meta,
+    company_name:
+      "Access detailed piping and instrumentation designs with precision.",
+    icon: mobile,
     iconBg: "#E6DEDD",
   },
   {
     title: "Media Files & Documents",
-    company_name: "subtitle placeholder",
-    icon: meta,
+    company_name: "Organize and view associated project files in one place.",
+    icon: backend,
     iconBg: "#E6DEDD",
   },
   {
     title: "CAD & BIM Models",
-    company_name: "subtitle placeholder",
-    icon: meta,
+    company_name: "Integrate and explore advanced 3D designs seamlessly.",
+    icon: creator,
     iconBg: "#E6DEDD",
   },
   {
     title: "GIS Mapping",
-    company_name: "subtitle placeholder",
-    icon: meta,
+    company_name: "Map assets and locations with dynamic geospatial tools.",
+    icon: web,
     iconBg: "#E6DEDD",
   },
   {
     title: "Reality Capture Devices & Sensors",
-    company_name: "subtitle placeholder",
-    icon: meta,
+    company_name:
+      "Incorporate real-world data from advanced capture technologies.",
+    icon: mobile,
     iconBg: "#E6DEDD",
   },
   {
     title: "External System Integration & Reporting Dashboard",
-    company_name: "subtitle placeholder",
-    icon: meta,
+    company_name:
+      "Connect systems and visualize key metrics through intuitive dashboards.",
+    icon: backend,
     iconBg: "#E6DEDD",
   },
   {
     title: "And More Bespoke Solution",
-    company_name: "subtitle placeholder",
-    icon: meta,
+    company_name: "Tailored integrations to meet your unique project needs.",
+    icon: creator,
     iconBg: "#E6DEDD",
   },
 ];
@@ -216,10 +184,6 @@ const projects = [
         name: "lms",
         color: "green-text-gradient",
       },
-      {
-        name: "miv",
-        color: "pink-text-gradient",
-      },
     ],
     image: ilms,
     project_preview: "#",
@@ -237,10 +201,6 @@ const projects = [
         name: "lms",
         color: "green-text-gradient",
       },
-      {
-        name: "miv",
-        color: "pink-text-gradient",
-      },
     ],
     image: ilms,
     project_preview: "#",
@@ -257,10 +217,6 @@ const projects = [
       {
         name: "lms",
         color: "green-text-gradient",
-      },
-      {
-        name: "miv",
-        color: "pink-text-gradient",
       },
     ],
     image: ilms,
